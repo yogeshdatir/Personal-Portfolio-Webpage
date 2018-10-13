@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  text-align: center;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  background-color: cyan;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  padding-top: 20px;
+  justify-content: center;
+}
+nav ul {
+  margin-left: auto;
+  margin-right: 40px;
+  margin-bottom: 20px;
+}
+nav li {
+  display: inline-block;
+  list-style: none;
+  top: 0;
+  padding: 5px;
+  margin-left: 40px;
+  margin-right: 20px;
+}
+.intro {
+  text-align: center;
+  top:0;
+  padding-top: 40vh;
+  min-height: 60vh;
+  background-color: cyan;
+  color:blueviolet;
+}
+#projects {
+  padding-top: 20px;
+  background-color: burlywood;
+}
+.project-tile {
+  margin-top: 20px;
+}
+.thumbnail {
+  width: 250px;
+}
+
+@media screen and (max-width: 600px) {
+  nav {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    flex-direction: column;
+    align-content: center;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+  nav li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
